@@ -1,7 +1,50 @@
-.hello {
-  color: red;
+header {
+  padding-left: 20%;
 }
 
-body {
-    background-color: bisque;
+main {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.gray {
+  background-color: #ddd;
+}
+
+section {
+  width: 50%;
+  padding: 0 5%;
+}
+
+.scores-container {
+  width: -webkit-fill-available;
+  border: 1px solid #000;
+}
+
+.player {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 5%;
+}
+
+.score {
+  width: 50px;
+}
+
+table tr {
+  border: 1px solid #000;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 90%;
+}
+
+form button {
+  width: 50%;
+  align-self: flex-end;
 }
