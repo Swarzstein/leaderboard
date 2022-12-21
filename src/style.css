@@ -21,8 +21,8 @@ section {
 .scores-container {
   width: -webkit-fill-available;
   border: 1px solid #000;
-
 }
+
 .player {
   display: flex;
   justify-content: space-between;
