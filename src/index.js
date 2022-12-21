@@ -1,11 +1,9 @@
-import _ from "lodash";
+import './style.css';
+import Scores from '../modules/scores.js';
 
-function component () {
-  const element = document.createElement('div');
-
-  element.innerHTML = _.join(['hello', 'webpack'], ' ');
-
-  return element;
+const printLeaderboard = () => {
+    const scores = new Scores();
+    document.querySelector('#leaderboard').innerHTML = scores.getScores();
 }
-
-document.body.appendChild(component());
+// printLeaderboard();
+document.querySelector('#refresh').addEventListener('click', printLeaderboard);
