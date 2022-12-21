@@ -30,4 +30,3 @@ class Scores {
 }
 
 export default Scores;
-

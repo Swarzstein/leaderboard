@@ -4,6 +4,7 @@ import Scores from '../modules/scores.js';
 const printLeaderboard = () => {
   const scores = new Scores();
   document.querySelector('#leaderboard').innerHTML = scores.getScores();
-}
-// printLeaderboard();
+};
+
+printLeaderboard();
 document.querySelector('#refresh').addEventListener('click', printLeaderboard);
