@@ -18,13 +18,13 @@ class Scores {
           return `
           <div class="player" id="player${n}">
             <span class="player-name">${score.user}:</span>
-            <div><span class="score">${score.score}</span> <span class="cup">1</span></div>
+            <div><span class="score">${score.score}</span> <span class="cup"></span></div>
           </div>`;
         }
         return `
           <div class="player gray" id="player${n}">
             <span class="player-name">${score.user}:</span>
-            <div><span class="score">${score.score}</span> <span class="cup">1</span></div>
+            <div><span class="score">${score.score}</span> <span class="cup"></span></div>
           </div>`;
       },
     ).reduce((prev, score) => prev + score) : `
