@@ -17,4 +17,6 @@ document.querySelector('form').addEventListener('submit', (e) => {
   const points = formScore.value;
   const scores = new Scores(username, points);
   scores.setScore();
+  document.querySelector('#form-name').value = '';
+  document.querySelector('#form-score').value = '';
 });
