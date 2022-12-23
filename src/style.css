@@ -9,6 +9,10 @@ main {
   justify-content: space-between;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .gray {
   background-color: #ddd;
 }
