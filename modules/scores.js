@@ -16,21 +16,21 @@ class Scores {
         n += 1;
         if (n % 2 === 0) {
           return `
-          <div class="player" id="player${n}">
+          <div class="player green" id="player${n}">
             <span class="player-name">${score.user}:</span>
-            <div><span class="score">${score.score}</span> <span class="cup"></span></div>
+            <div><span class="score">${score.score}</span></div>
           </div>`;
         }
         return `
-          <div class="player gray" id="player${n}">
+          <div class="player orange" id="player${n}">
             <span class="player-name">${score.user}:</span>
-            <div><span class="score">${score.score}</span> <span class="cup"></span></div>
+            <div><span class="score">${score.score}</span></div>
           </div>`;
       },
     ).reduce((prev, score) => prev + score) : `
     <div class="player" id="player1">
       <span class="player-name">${leaderboard[0].user}:</span>
-      <div><span class="score">${leaderboard[0].score}</span> <span class="cup">1</span></div>
+      <div><span class="score">${leaderboard[0].score}</span></div>
     </div>`;
     return leaderboard;
   }

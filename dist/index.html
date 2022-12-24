@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leaderboard</title>
+<script defer src="runtime.js"></script><script defer src="index.js"></script></head>
+<body>
+  <header>
+    <h1>Leaderboard</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Recent Scores <button id="refresh">Refresh</button></h2> 
+      <div class="scores-container" id="leaderboard">
+        <div class="player">
+          <span class="player-name gray">Daniel:</span>
+          <div><span class="score">20</span> <span class="cup">1</span></div>
+        </div>
+        <div class="player">
+            <span class="player">Richard:</span>
+            <div><span class="score">13</span> <span class="cup"></span></div>
+        </div>
+        <div class="player">
+            <span class="player gray">Jessica</span>
+            <div><span class="score">14</span><span class="cup">3</span> </div>
+        </div>
+        <div class="player">
+            <span class="player">Juan</span>
+            <div><span class="score">15</span> <span class="cup">2</span></div>
+        </div>
+      </div>
+      
+    </section>
+    <section>
+        <h2>Add your score</h2>
+        <form action="post">
+            <input type="text" name="form-name" id="form-name" placeholder="Your name">
+            <input type="number" name="form-score" id="form-score" placeholder="Your score">
+            <button type="submit" id="submit-score">Submit</button>
+        </form>
+    </section>
+  </main>
+</body>
+</html>
