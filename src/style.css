@@ -4,9 +4,9 @@ body {
   background-color: #001433;
   background-image: url('./assets/Crash-Bandicoot-4.webp');
   background-size: cover;
-  font-family: 'Shojumaru';
+  font-family: 'Shojumaru', sans-serif;
   color: #e1e132;
-  text-decoration:#000;
+  text-decoration: #000;
 }
 
 header {
@@ -29,7 +29,7 @@ main {
 }
 
 .green {
- background-color: #0c2761;
+  background-color: #0c2761;
 }
 
 section {
@@ -68,15 +68,15 @@ form {
   width: 90%;
 }
 
-form button {
-  width: 50%;
-  align-self: flex-end;
-}
-
 button {
   background-color: #38a746;
   border-color: #38a746;
   height: 30px;
+}
+
+form button {
+  width: 50%;
+  align-self: flex-end;
 }
 
 .recent-score {
